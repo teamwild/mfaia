@@ -39,10 +39,10 @@ BACK = [
 
 @MafiaBot.on(events.InlineQuery)
 async def helper(hquery):
-    if hquery.text == 'help':
+    if hquery.text == b'help':
         try:
             message = hquery.builder.article('Help', text=HELP, buttons=Buttons)
-            await hquery.answer([message])
+            await hquery.answer(message)
         except Exception as er:
             print(er)
 
@@ -60,7 +60,7 @@ async def help(e):
     if e.sender_id in MY_USERS:
         await e.delete()
         try:
-            message = await e.client.inline_query(BOT_USERNAME, 'help')
+            message = await e.client.inline_query(BOT_USERNAME, b'help')
             await message[0].click(e.chat_id, reply_to=e.reply_to_msg_id, hide_via=True)
         except Exception as er:
             print(er)
