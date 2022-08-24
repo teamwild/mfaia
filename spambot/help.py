@@ -41,7 +41,7 @@ BACK = [
 async def helper(hquery):
     if hquery.text == 'help':
         try:
-            message = await hquery.builder.article('Help', text=HELP, buttons=Buttons)
+            message = hquery.builder.article('Help', text=HELP, buttons=Buttons)
             await hquery.answer([message])
         except Exception as er:
             print(er)
