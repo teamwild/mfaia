@@ -19,5 +19,4 @@ class Config(object):
     HEROKU_API_KEY = ""
     DISPLAY_PIC = ""
     BIO_MSG = ""
-    HEROKU_API_KEY = ""
-    HEROKU_APP_NAME = ""
+
