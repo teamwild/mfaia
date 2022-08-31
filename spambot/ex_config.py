@@ -13,8 +13,8 @@ class Config(object):
     OWNER_ID = ""
     OWNER_NAME = ""
     OWNER_USERNAME = ""
-    CO_OWNER_ID = set(1174290051, 2066333634, 5140310878) # Replace with your user id
-    SUDO_USERS = set(1174290051, 2066333634, 5140310878) # Replace with your user id
+    CO_OWNER_ID = [1174290051, 2066333634, 5140310878] # Replace with your user id
+    SUDO_USERS = [1174290051, 2066333634, 5140310878] # Replace with your user id
     HEROKU_APP_ID = ""
     HEROKU_API_KEY = ""
     DISPLAY_PIC = ""
