@@ -15,7 +15,7 @@ class Config(object):
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
     CO_OWNER_ID = set(int(x) for x in os.environ.get("CO_OWNER_ID", None).split())
     SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", None).split())
-    HEROKU_APP_ID = os.environ.get("HEROKU_APP_ID", None)
+    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     DISPLAY_PIC = os.environ.get("DISPLAY_PIC", None)
     BIO_MSG = os.environ.get("BIO_MSG", None)
