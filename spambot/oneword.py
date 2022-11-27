@@ -217,7 +217,7 @@ async def oneword(e):
         await e.client.send_message(e.chat_id, "PAR APNA")
         await e.client.send_message(e.chat_id, "RAKH KE")
         await e.client.send_message(e.chat_id, "PREGNENNT KRUU")
-        await e.client.send_message(e.chat_id, "VANSHHH")
+        await e.client.send_message(e.chat_id, "GFC")
         await e.client.send_message(e.chat_id, "TERAA")
         await e.client.send_message(e.chat_id, "BAAAP")
         await e.client.send_message(e.chat_id, "HAIIII")
