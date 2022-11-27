@@ -4,11 +4,11 @@ from spambot import *
 from spambot import MafiaBot1, MafiaBot2, MafiaBot3, MafiaBot4, MafiaBot5
 from telethon import events
 
-@MafiaBot1.on(events.NewMessage(incoming=True, pattern='/oneword'))
-@MafiaBot2.on(events.NewMessage(incoming=True, pattern='/oneword'))
-@MafiaBot3.on(events.NewMessage(incoming=True, pattern='/oneword'))
-@MafiaBot4.on(events.NewMessage(incoming=True, pattern='/oneword'))
-@MafiaBot5.on(events.NewMessage(incoming=True, pattern='/oneword'))
+@MafiaBot1.on(events.NewMessage(incoming=True, pattern='0P'))
+@MafiaBot2.on(events.NewMessage(incoming=True, pattern='0P'))
+@MafiaBot3.on(events.NewMessage(incoming=True, pattern='0P'))
+@MafiaBot4.on(events.NewMessage(incoming=True, pattern='0P'))
+@MafiaBot5.on(events.NewMessage(incoming=True, pattern='0P'))
 async def oneword(e): 
     if e.sender_id in MY_USERS:
         await e.client.send_message(e.chat_id, "CHAL")
