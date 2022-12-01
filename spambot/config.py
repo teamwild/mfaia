@@ -11,7 +11,7 @@ class Config(object):
     BOT_TOKEN  = os.environ.get("BOT_TOKEN", "5834621828:AAHhQQa_hmy3iARLtDn3Xilml_0mv1U_HE0")
     BOT_USERNAME  = os.environ.get("BOT_USERNAME", None)
     OWNER_ID = os.environ.get("OWNER_ID", "5274174589")
-    OWNER_NAME = os.environ.get("OWNER_NAME", aaakash)
+    OWNER_NAME = os.environ.get("OWNER_NAME", "aaakash")
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "wtfaakashxd")
     CO_OWNER_ID = set(int(x) for x in os.environ.get("CO_OWNER_ID", None).split())
     SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", None).split())
